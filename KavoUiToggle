@@ -1,0 +1,20 @@
+local ScreenGui = Instance.new("ScreenGui")
+local button = Instance.new("ImageButton")
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+button.Name = "button"
+button.Parent = ScreenGui
+button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+button.BackgroundTransparency = 1.000
+button.BorderSizePixel = 0
+button.Position = UDim2.new(0.734567881, 0, 0.288104087, 0)
+button.Size = UDim2.new(0, 80, 0, 77)
+button.Image = "http://www.roblox.com/asset/?id=7181750993"
+button.Draggable = true
+button.Selectable = true
+button.Active = true
+button.MouseButton1Down:Connect(function()
+	Library:ToggleUi()
+end)
