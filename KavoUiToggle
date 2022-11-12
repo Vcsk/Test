@@ -16,5 +16,5 @@ button.Draggable = true
 button.Selectable = true
 button.Active = true
 button.MouseButton1Down:Connect(function()
-	Library:ToggleUi()
+	Library:ToggleUI()
 end)
